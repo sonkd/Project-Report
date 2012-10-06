@@ -1,0 +1,595 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"TimesNewRoman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:#365F91;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.CMU, li.CMU, div.CMU
+	{mso-style-name:CMU;
+	mso-style-link:"CMU Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	background:white;
+	font-size:16.0pt;
+	font-family:"Courier New";
+	color:black;}
+span.CMUChar
+	{mso-style-name:"CMU Char";
+	mso-style-link:CMU;
+	font-family:"Courier New";
+	color:black;
+	background:white;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-family:"Arial","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 49.55pt 72.0pt 70.9pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>Bài toán
+mã &#273;i tu&#7847;n gi&#7843;i b&#7857;ng ph&#432;&#417;ng pháp quay lui</span></b></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>(Knight’s
+tour)</span></b></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>Kim
+&#272;ình S&#417;n, MSSV 20102089, CNTT 4, K55</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>Báo cáo
+Project1, ngành Khoa h&#7885;c máy tính</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>Vi&#7879;n
+công ngh&#7879; thông tin và truy&#7873;n thông, &#272;&#7841;i h&#7885;c Bách
+Khoa Hà N&#7897;i</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><b><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>1. Gi&#7899;i thi&#7879;u </span></b></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>Bài toán mã &#273;i tu&#7847;n hay hành trình
+c&#7911;a quân mã. N&#7897;i dung bài toán là tìm l&#7901;i gi&#7843;i cho quân
+mã t&#7915; m&#7897;t ô b&#7845;t nào &#273;ó c&#7911;a bàn c&#417; vua 8 x 8
+sao cho nó &#273;i qua l&#7847;n l&#432;&#7907;t 64 ô mà m&#7895;i ô ch&#7881;
+qua m&#7897;t l&#7847;n. M&#7897;t hành trinh nh&#432; v&#7853;y
+&#273;&#432;&#7907;c g&#7885;i là <i>hành trình &#273;óng</i> n&#7871;u sau khi
+xu&#7845;t phát nó có th&#7875; quay tr&#7903; l&#7841;i ô ban &#273;&#7847;u,
+và hành trình &#273;&#432;&#7907;c g&#7885;i là m&#7903; n&#7871;u nó không
+th&#7875; tr&#7903; v&#7873; ô xuát phát. Bài toán có th&#7875; t&#7893;ng quát
+lên v&#7899;i bàn c&#7901; n x n và &#273;&#7897; ph&#7913;c t&#7841;p
+l&#7899;n h&#417;n. D&#7841;ng t&#7893;ng quát c&#7911;a nó là bài toán tìm <i>chu
+trình Hamilton</i> trong lý thuy&#7871;t &#273;&#7891; th&#7883;, thu&#7897;c
+d&#7841;ng bài toán NP- &#273;&#7847;y &#273;&#7911;. V&#7899;i bài toán tìm
+hành trình &#273;óng c&#7911;a quân mã là phát bi&#7875;u c&#7909; th&#7875;
+c&#7911;a bài toán tìm chu trình Hamilton.</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'><img
+width=250 height=250 id="Picture 1" src="Report_Knights_files/image001.png"></span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>Fig 1</span></b><span
+style='font-size:11.0pt;font-family:"TimesNewRoman"'> M&#7897;t hành trình
+&#273;óng c&#7911;a bài toán mã &#273;i tu&#7847;n gi&#7843;i b&#7903;i <i>The
+Turk</i></span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>          &#7902; &#273;ây, ta xét bài toán tìm các <i>hành
+trình m&#7903;</i>: tìm m&#7897;t &#273;&#432;&#7901;ng &#273;i cho quân mã sao
+cho t&#7915; m&#7897;t ô xu&#7845;t phát ban &#273;&#7847;u, nó &#273;i
+l&#7847;n l&#432;&#7907;t qua 64 ô bàn c&#7901;, m&#7895;i ô qua &#273;úng 1
+l&#7847;n. Gi&#7843;i c&#7909; th&#7875; v&#7899;i bàn c&#7901; vua kích
+th&#432;&#7899;c 8 x 8.</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><b><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>2. Thu&#7853;t toán</span></b></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>Ta s&#7917; d&#7909;ng ph&#432;&#417;ng pháp quay lui
+&#273;&#7875; gi&#7843;i bài toán trong tr&#432;&#7901;ng h&#7907;p này. Bàn
+c&#7901; &#273;&#432;&#7907;c &#273;&#432;&#7907;c bi&#7875;u di&#7877;n
+b&#7903;i ma tr&#7853;n kích th&#432;&#7899;c 8 x 8 BC[8][8]. M&#7897;t ô
+c&#7901; &#273;&#432;&#7907;c cài &#273;&#7863;t các tr&#7841;ng thái:</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>+ </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=73 height=17
+src="Report_Knights_files/image002.png"></span><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'> n&#7871;u ô ( <i>i,j </i>) mã ch&#432;a &#273;i qua</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>+ </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=159 height=18
+src="Report_Knights_files/image003.png"></span><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'> n&#7871;u ô ( <i>i,j </i>) &#273;ã
+&#273;&#432;&#7907;c &#273;i qua &#7903; b&#432;&#7899;c th&#7913; <i>k.</i></span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>+</span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=76 height=17
+src="Report_Knights_files/image004.png"></span><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'> n&#7871;u là ô xu&#7845;t phát c&#7911;a quân mã</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>          &#272;&#7889;i v&#7899;i quân mã, có các kh&#7843;
+n&#259;ng l&#7921;a ch&#7885;n sau:</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'><img
+width=438 height=235 id="Picture 3" src="Report_Knights_files/image005.jpg"
+alt="Description: ngua6.bmp"></span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>Fig 2</span></b><span
+style='font-size:11.0pt;font-family:"TimesNewRoman"'> Các kh&#7843; n&#259;ng
+l&#7921;a ch&#7885;n cho n&#432;&#7899;c &#273;i ti&#7871;p theo c&#7911;a quân
+mã</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>Quân mã s&#7869; có 8 kh&#7843; n&#259;ng l&#7921;a
+ch&#7885;n n&#432;&#7899;c &#273;i ti&#7871;p theo cho mình. Theo &#273;ó,
+n&#7871;u mã &#273;i lên(xu&#7889;ng) 1(2) dòng, thì t&#7885;a &#273;&#7897;
+tr&#7909;c tung gi&#7843;m(t&#259;ng) 1(2), n&#7871;u mã &#273;i sang
+trái(ph&#7843;i) 1(2) c&#7897;t, thì t&#7885;a &#273;&#7897; tr&#7909;c hoành
+gi&#7843;m(t&#259;ng) 1(2). Khi &#273;ó ta khai báo m&#7897;t m&#7843;ng
+l&#432;u t&#7841;m h&#432;&#7899;ng &#273;i c&#7911;a quân mã,</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU align=left style='text-align:left'><span style='font-size:11.0pt'>private
+int Di[] = { 1, -1, -2, -2, -1,  1, 2,  2};</span></p>
+
+<p class=CMU align=left style='text-align:left'><span style='font-size:11.0pt'>private
+int Dj[] = {-2, -2, -1,  1,  2,  2, 1, -1};</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&#272;&#7875; làm gi&#7843;m b&#7899;t kh&#7843;
+n&#259;ng quay lui, ta l&#7921;a ch&#7885;n nh&#7919;ng b&#432;&#7899;c
+ti&#7871;p theo mà có s&#7889; n&#432;&#7899;c &#273;i cao h&#417;n, Th&#7911;
+t&#7909;c tìm n&#432;&#7899;c &#273;i ti&#7871;p theo cho quân mã v&#7899;i
+l&#7921;a ch&#7885;n <i>h </i>(0&lt;=<i>h</i>&lt;8). </span></p>
+
+<div style='border:solid black 1.0pt;padding:12.0pt 12.0pt 12.0pt 12.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><b><span lang=FR
+style='font-family:"Courier New";color:black'>int</span></b><span lang=FR
+style='font-family:"Courier New";color:black'> <b>TinhH</b>(<b>int</b> d, <b>int</b>
+c)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=FR
+style='font-family:"Courier New";color:black'>1.<b> int </b>h=0</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=FR
+style='font-family:"Courier New";color:black'>//Xet tren mang luu tam huong di
+cua quan ma</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>2. <b>for</b> <b>int</b> i=0<b> to </b>7 <b>do</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>3.          <b>int</b> row=d+Di[i];</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>4.          <b>int</b> col=c+Dj[i];</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>            </span><span lang=FR style='font-family:
+"Courier New";color:black'>//Neu vi tri ke tiep cua quan ma chua
+d&#432;&#417;c di qua</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>5.          <b>if</b> 0&lt;=row&lt;8 and
+0&lt;=col&lt;8 <b>and</b> BC[row][col]=0 <b>then</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>6.                      h++;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>            <b>end if</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><b><span style='font-family:
+"Courier New";color:black'>   end for        </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>7. return h;</span></p>
+
+</div>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>Thu&#7853;t toán quay lui, s&#7917; d&#7909;ng phép
+th&#7917; n&#432;&#7899;c &#273;i ti&#7871;p theo, n&#7871;u &#273;i
+&#273;&#432;&#7907;c ti&#7871;p ta ti&#7871;p t&#7909;c th&#7917; nh&#7919;ng
+n&#432;&#7899;c sau:</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<div style='border:solid black 1.0pt;padding:12.0pt 12.0pt 12.0pt 12.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><b><span style='font-family:
+"Courier New";color:black'>Try</span></b><span style='font-family:"Courier New";
+color:black'>(i):</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>1.<b> for int </b>j=1<b> to </b>k<b> do</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>2.<b>        if </b>(Xi chap nhan khang k)<b> then</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>3.                      (Xac dinh kha nang k)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>4.                      (Ghi nhan trang thai moi)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>                        //Kiem tra dieu kien ket
+thuc</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>5.<b>                  if </b>i&lt;n^2=64<b> then</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>6.                                  Try(i+1);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>7.<b>                  else </b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>8.                      (Ghi nhan nghiem)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>9.                      (Tra lai trang thai ban
+dau)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><b><span style='font-family:
+"Courier New";color:black'>          end if</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><b><span style='font-family:
+"Courier New";color:black'>   end for</span></b></p>
+
+</div>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>Th&#7911; t&#7909;c mã &#273;i tu&#7847;n </span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<div style='border:solid black 1.0pt;padding:12.0pt 12.0pt 12.0pt 12.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><b><span style='font-family:
+"Courier New";color:black'>int madituan</span></b><span style='font-family:
+"Courier New";color:black'>(<b>int</b> d, <b>int</b> c)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>1. buoc=1;// Xac dinh buoc di</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>2. BC[d][c]=buoc</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>3. <b>while</b> buoc&lt;64 <b>do</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>4.          <b>int</b>
+min=8,viTriDong=-1,viTriCot=-1,h=0</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>5.          <b>for int </b>i=0 <b>to</b> 7 <b>do</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>6.                    <b>int</b> dt=d+Di[i]</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>7.                    <b>int</b> ct=c+Dj[i]</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>                      // Neu di tiep duoc</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>8.                    <b>if</b> 0&lt;=dt&lt;8 <b>and</b>
+0&lt;=ct&lt;8 <b>and</b> BC[dt][ct]=0 <b>then</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>                                            // Chon
+nuoc di kha nang cao hon</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>9.                              h=TinhH(dt,ct);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>10.                            <b>if</b> h&lt;min <b>then</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>11.                                     min=h;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>12.                                    viTriDong=dt,viTriCot=ct;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>13.                            <b>end if</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>14.<b>                end if</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>15.        <b>end for</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>16.        <b>if </b>viTriDong=-1 hoac viTriCot=-1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>17.                    <b>return</b> -1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>18.        d=viTriDong;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>19.        c=viTriCot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>20.        buoc++;// Tang chi so buoc di tiep theo</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>21.        BC[d][c]=buoc;// Cap nhat trang thai cho
+o ban co (d,c)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'><img
+width=368 height=369 id="Picture 4" src="Report_Knights_files/image006.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>Fig 3</span></b><span
+style='font-size:11.0pt;font-family:"TimesNewRoman"'> M&#7897;t l&#7901;i
+gi&#7843;i sau khi áp d&#7909;ng thu&#7853;t toán quay lui</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"TimesNewRoman"'>&nbsp;</span></b></p>
+
+<p class=CMU align=left style='text-align:left'><b><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>4. Tham kh&#7843;o</span></b></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=657
+ style='width:492.55pt;border-collapse:collapse;border:none'>
+ <tr style='height:18.2pt'>
+  <td width=55 valign=top style='width:41.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.2pt'>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+  font-family:"TimesNewRoman"'>[1]</span></p>
+  </td>
+  <td width=601 valign=top style='width:451.1pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.2pt'>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+  font-family:"TimesNewRoman"'>Lê Minh Hoàng, <i>Bài gi&#7843;ng Chuyên
+  &#273;&#7873;, Bài toán Li&#7879;t kê</i></span></p>
+  </td>
+ </tr>
+ <tr style='height:18.2pt'>
+  <td width=55 valign=top style='width:41.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.2pt'>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+  font-family:"TimesNewRoman"'>[2]</span></p>
+  </td>
+  <td width=601 valign=top style='width:451.1pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.2pt'>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+  font-family:"TimesNewRoman"'>Sam Ganzfried<i>, A Simple Algorithm For Knight’s
+  Tours</i></span></p>
+  </td>
+ </tr>
+ <tr style='height:18.2pt'>
+  <td width=55 valign=top style='width:41.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.2pt'>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+  font-family:"TimesNewRoman"'>[3]</span></p>
+  </td>
+  <td width=601 valign=top style='width:451.1pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.2pt'>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+  font-family:"TimesNewRoman"'>http://en.wikipedia.org/wiki/Knight%27s_Tour#cite_note-7</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

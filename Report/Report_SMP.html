@@ -1,0 +1,863 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"TimesNewRoman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"TimesNewRoman";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:#365F91;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.CMU, li.CMU, div.CMU
+	{mso-style-name:CMU;
+	mso-style-link:"CMU Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	background:white;
+	font-size:16.0pt;
+	font-family:"TimesNewRoman";
+	color:black;}
+span.CMUChar
+	{mso-style-name:"CMU Char";
+	mso-style-link:CMU;
+	font-family:"TimesNewRoman";
+	color:black;
+	background:white;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-family:"Arial","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 35.35pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=CMU><b>Bài toán hôn nhân b&#7873;n v&#7919;ng</b><sup>*</sup></p>
+
+<p class=CMU>(The Stable Marriage Problem)</p>
+
+<p class=CMU>&nbsp;</p>
+
+<p class=CMU><span style='font-size:11.0pt'>Kim &#272;ình S&#417;n, MSSV
+20102089, CNTT 4, K55</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Báo cáo Project1, ngành Khoa
+h&#7885;c máy tính</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Vi&#7879;n công ngh&#7879; thông
+tin và truy&#7873;n thông, &#272;&#7841;i h&#7885;c Bách Khoa Hà N&#7897;i</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>*:
+N&#7897;i dung s&#7917; d&#7909;ng ph&#432;&#417;ng pháp quay lui &#273;&#432;&#7907;c
+gi&#7899;i thi&#7879;u chi ti&#7871;t &#7903; [1]</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>T&#7915;
+vi&#7871;t t&#7855;t: SMP   Stable Marriage Problem</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><b><span style='font-size:11.0pt'>1.
+Bài toán hôn nhân b&#7873;n v&#7919;ng</span></b></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>Cho
+t&#7853;p g&#7891;m <i>n</i> ng&#432;&#7901;i &#273;àn ông và <i>n </i>ng&#432;&#7901;i
+ph&#7909; n&#7919;. M&#7895;i ng&#432;&#7901;i &#273;àn ông hay ph&#7909;
+n&#7919; &#273;&#7873;u có th&#7921; t&#7921; thích nh&#7919;ng
+ng&#432;&#7901;i khác gi&#7899;i trong t&#7853;p này. Yêu c&#7847;u
+&#273;&#7863;t ra là ghép <i>n </i>c&#7863;p nam-n&#7919; t&#7915; t&#7853;p
+trên sao cho v&#7899;i hai c&#7863;p (M1, W1) và (M2, W2) (M<i>i</i> n&#7857;m
+trong t&#7853;p M g&#7891;m <i>n</i> ng&#432;&#7901;i &#273;àn ông, và W<i>i</i>
+n&#7857;m trong t&#7853;p W g&#7891;m <i>n</i> ng&#432;&#7901;i ph&#7909;
+n&#7919;) b&#7845;t kì sao cho,</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>- M1
+thích W1 h&#417;n W2 và W1 thích M1 h&#417;n M2</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>- M2
+thích W2 h&#417;n W1 và W2 thích M2 h&#417;n M1</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>          Khi
+&#273;ó ta kí hi&#7879;u (M1, W1)</span><span style='font-size:11.0pt;
+font-family:"Cambria Math","serif"'>&#8827;</span><span style='font-size:11.0pt'>(M1,
+W2), (M1, W1)</span><span style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8827;</span><span
+style='font-size:11.0pt'>(M2, W1), (M2, W2)</span><span style='font-size:11.0pt;
+font-family:"Cambria Math","serif"'>&#8827;</span><span style='font-size:11.0pt'>(M2,
+W1), (M2, W2)</span><span style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8827;</span><span
+style='font-size:11.0pt'>(M1, W2) và ta g&#7885;i các cu&#7897;c hôn nhân là
+b&#7873;n v&#7919;ng. N&#7871;u t&#7891;n t&#7841;i, <i>i</i></span><i><span
+style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8800;</span></i><i><span
+style='font-size:11.0pt'>j, </span></i><span style='font-size:11.0pt'>W<i>i,</i>
+W<i>j, </i>thu&#7897;c W và M<i>j,</i> M<i>i </i>thu&#7897;c M sao cho (M<i>i,</i>W<i>j</i>)</span><span
+style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8827;</span><span
+style='font-size:11.0pt'> (M<i>i,</i>W<i>i</i>) ho&#7863;c (M<i>j,</i>W<i>i</i>)</span><span
+style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8827;</span><span
+style='font-size:11.0pt'> (M<i>i,</i>W<i>i</i>) thì ta nói các cu&#7897;c hôn
+nhân &#273;ó không bên v&#7919;ng.</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:12.75pt'>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.75pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><span
+  style='font-size:11.0pt'>   Men’s List</span></p>
+  </td>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.75pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><span
+  style='font-size:11.0pt'>   Woment’s List</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.15pt'>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.15pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>M1:
+  W1,W2,W3,W4</span></p>
+  </td>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.15pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>W1:
+  M1,M2,M3,M4</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.75pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>M2:
+  W2,W1,W3,W4</span></p>
+  </td>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.75pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>W2:
+  M4,M3,M3,M1</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.15pt'>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.15pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>M3:
+  W1,W4,W3,W2</span></p>
+  </td>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.15pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>W3:
+  M1,M2,M3,M4</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.25pt'>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.25pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>M4:
+  W4,W3,W1,W2</span></p>
+  </td>
+  <td width=173 valign=top style='width:129.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.25pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>W4:
+  M3,M4,M1,M2</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=CMU><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+<p class=CMU><b><span lang=VI style='font-size:11.0pt'>Fig 1.</span></b><span
+lang=VI style='font-size:11.0pt'> </span><span lang=VI style='font-size:10.0pt'>Ví
+d&#7909; v&#7873; danh sách “thích” c&#7911;a Men và Women</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><b><span lang=VI style='font-size:11.0pt'>2.
+Thu&#7853;t toán </span></b></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>N&#259;m
+1962, David Gale và Lloyd Shapley ch&#7913;ng minh r&#7857;ng v&#7899;i
+s&#7889; l&#432;&#7907;ng &#273;àn ông và ph&#7909; n&#7919; b&#7857;ng nhau
+thì luôn t&#7891;n t&#7841;i l&#7901;i gi&#7843;i b&#7873;n v&#7919;ng cho bài
+toán SMP. &#272;&#7891;ng th&#7901;i h&#7885; &#273;&#432;a ra thu&#7853;t toán
+tìm l&#7901;i gi&#7843;i &#273;ó, và ngày nay, thuât toán này v&#7851;n
+&#273;&#432;&#7907;c s&#7917; d&#7909;ng và c&#7843;i ti&#7871;n.</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>          Ý
+t&#432;&#7903;ng thu&#7853;t toán nh&#432; sau: M&#7895;i ng&#432;&#7901;i
+&#273;àn ông s&#7869; &#273;&#432;&#7907;c duy&#7879;t v&#7899;i yêu c&#7847;u
+“tình tr&#7841;ng hôn nhân” là <i>&#273;&#7897;c thân</i> hay <i>&#273;ã
+c&#7847;u hôn</i>, &#273;&#7891;ng th&#7901;i m&#7895;i ng&#432;&#7905;i
+ph&#7909; n&#7919; c&#361;ng có tình tr&#7841;ng quan h&#7879; là “<i>&#273;ã
+&#273;ính hôn</i>” hay <i>“ch&#432;a &#273;ính hôn”</i>. Sau khi k&#7871;t thúc
+thu&#7853;t toán, t&#7845;t c&#7843; s&#7869; &#7903; tính tr&#7841;ng là <i>&#273;ã
+c&#432;&#7899;i</i>. Thu&#7853;t toán bao g&#7891;m nhi&#7873;u
+l&#432;&#7907;t, &#273;&#7847;u tiên, theo th&#7913; t&#7921;, m&#7895;i
+ng&#432;&#7901;i &#273;àn ông &#273;&#7873;u &#7903; tr&#7841;ng thái “<i>&#273;&#7897;c
+thân</i>” s&#7869; c&#7847;u hôn ng&#432;&#7901;i ph&#7909; n&#7919; mà anh ta
+thích nh&#7845;t (ho&#7863;c c&#7847;u hôn t&#7845;t c&#7843; các cô gái) mà cô
+ta v&#7851;n “<i>ch&#432;a &#273;ính hôn</i>”. Sau &#273;ó, m&#7895;i
+ng&#432;&#7901;i ph&#7909; n&#7919; xem xét  s&#7869; tr&#7843; l&#7901;i “có
+th&#7875;” v&#7899;i ng&#432;&#7901;i &#273;ính hôn mà cô ta thích nh&#7845;t
+&#273;&#7891;ng th&#7901;i t&#7915; ch&#7889;i t&#7845;t c&#7843; nh&#7919;ng
+ng&#432;&#7901;i còn l&#7841;i, r&#7891;i chuy&#7875;n sang tr&#7841;ng  thái “<i>&#273;ã
+&#273;ính hôn</i>”. V&#7853;y, sau l&#432;&#7907;t &#273;&#7847;u tiên: (a)
+t&#7845;t c&#7843; &#273;àn ông &#273;&#7873;u c&#7847;u hôn v&#7899;i
+ng&#432;&#7901;i ph&#7909; n&#7919; anh ta thích nhât (b) Sau &#273;ó,
+t&#7845;t c&#7843; ph&#7909; n&#7919; &#273;&#7873;u “&#273;ính hôn t&#7841;m
+th&#7901;i” v&#7899;i ng&#432;&#7901;i mà cô ta thích nh&#7845;t, t&#7915;
+ch&#7889;i t&#7845;t c&#7843; ng&#432;&#7901;i khác.</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>          &#7902;
+nh&#7919;ng l&#432;&#7907;t ti&#7871;p theo, &#273;&#7847;u tiên (1) m&#7895;i
+ng&#432;&#7901;i &#273;àn ông “&#273;&#7897;c thân” c&#7847;u hôn
+ng&#432;&#7901;i ph&#7909; n&#7919; anh ta thích nh&#7845;t mà tr&#432;&#7899;c
+&#273;ó anh ta ch&#432;a c&#7847;u hôn, m&#7863;c dù có th&#7875; cô ta “&#273;ã
+&#273;&#432;&#7907;c &#273;ính hôn” hay ch&#432;a. Sau &#273;ó (2) m&#7895;i
+ng&#432;&#7901;i ph&#7909; n&#7919; tr&#7843; l&#7901;i “có th&#7875;”
+v&#7899;i ng&#432;&#7901;i c&#7847;u hôn mà cô ta thích nh&#7845;t trong
+s&#7889; nh&#7919;ng ng&#432;&#7901;i m&#7899;i c&#7847;u hôn mình, t&#7915; ch&#7889;i
+t&#7845;t c&#7843; nh&#7919;ng ng&#432;&#7901;i còn l&#7841;i, k&#7875;
+c&#7843; ng&#432;&#7901;i cô ta “ &#273;ính hôn t&#7841;m th&#7901;i ”
+tr&#432;&#7899;c &#273;ó. Do &#273;ó, nh&#7919;ng ng&#432;&#7901;i ph&#7909;
+n&#7919; ngày càng &#273;&#432;&#7907;c ng&#432;&#7901;i t&#7889;t h&#417;n sau
+m&#7895;i l&#432;&#7907;t l&#7863;p.</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>          Rõ
+ràng, thu&#7853;t toán &#273;&#7843;m b&#7843;o t&#7845;t c&#7843; m&#7885;i
+ng&#432;&#7901;i &#273;&#7873;u k&#7871;t hôn khi k&#7871;t thúc thu&#7853;t
+toán. Vì &#7903; m&#7895;i b&#432;&#7899;c, m&#7895;i ng&#432;&#7901;i
+ph&#7909; n&#7919; luôn &#7903; trong tr&#7841;ng thái “<i>&#273;ã &#273;ính
+hôn</i>” nên thu&#7853;t toán k&#7871;t thúc khi không còn ng&#432;&#7901;i
+&#273;àn ông nào “<i>&#273;&#7897;c thân</i>”, &#273;i&#7873;u này có
+ngh&#297;a là t&#7845;t c&#7843; &#273;&#7873;u &#7903; trong tr&#7841;ng thái
+“&#273;ã &#273;ính hôn” v&#7899;i ai &#273;ó.</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><b><span lang=VI style='font-size:11.0pt'>Thu&#7853;t
+gi&#7843;i bài toán &#272;&#7873; xu&#7845;t G-S</span></b></p>
+
+<p class=CMU style='text-align:justify'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=2 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=658 height=412 src="Report_SMP_files/image001.png"
+  alt="StableMarriage&#13;&#10;1.  while t&#7891;n t&#7841;i ng&#432;&#7901;i &#273;àn ông &#273;&#7897;c thân X mà v&#7851;n còn ng&#432;&#7901;i ph&#7909; n&#7919; W &#273;&#7875; c&#7847;u hôn&#13;&#10;2.	W=: ng&#432;&#7901;i ph&#7909; n&#7919; mà X thích nh&#7845;t ch&#432;a c&#7847;u hôn&#13;&#10;3.	if  W &#273;ã &#273;ính hôn( v&#7899;i Y) then&#13;&#10;4.	       if	 W thích X h&#417;n Y then&#13;&#10;		 //&#273;&#7863;t X-W thành &#273;ã c&#432;&#7899;i nhau&#13;&#10;5.		 W &#273;ã &#273;ính hôn (v&#7899;i X)&#13;&#10;6.		 X không &#273;&#7897;c thân	&#13;&#10;7.		 Lo&#7841;i Y kh&#7887;i danh sách thích c&#7911;a W&#13;&#10;8.		 Y tr&#7903; thành &#273;&#7897;c thân&#13;&#10;9.	        else &#13;&#10;10.		 Lo&#7841;i X kh&#7887;i danh sách thích c&#7911;a W	&#13;&#10;		 //Y-W v&#7851;n c&#432;&#7899;i nhau&#13;&#10;11.	       end if		&#13;&#10;12.       else //W v&#7851;n &#273;&#7897;c thân&#13;&#10;		//&#273;&#7863;t X-W thành &#273;ã c&#432;&#7899;i nhau&#13;&#10;13.		 W &#273;ã &#273;ính hôn (v&#7899;i X)&#13;&#10;14.		 X không &#273;&#7897;c thân&#13;&#10;15.       end if&#13;&#10;16.  end while&#13;&#10;&#13;&#10;"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<b><span lang=VI style='font-size:11.0pt'>                                                                                                                        </span></b></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>Nh&#432;
+v&#7853;y, s&#7869; có t&#7889;i &#273;a </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=15 height=18
+src="Report_SMP_files/image002.png"></span><span lang=VI style='font-size:11.0pt'> vòng
+l&#7863;p.</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><b><span lang=VI style='font-size:11.0pt'>4.
+Cài &#273;&#7863;t</span></b></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>T&#7841;o
+l&#7899;p &#273;&#7889;i t&#432;&#7907;ng ng&#432;&#7901;i kèm danh sách
+“thích”, tr&#7841;ng thái quan h&#7879;</span></p>
+
+<div style='border:solid black 1.0pt;padding:12.0pt 0cm 12.0pt 0cm'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    class
+Person</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    private int
+[] preferences;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    private int
+currentMatch;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    private int
+nextChoice;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    public
+static final int UNMATCHED = -1;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black'>//Tinh trang hon nha: -1 là chua cuoi</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    Person (int
+n)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>       
+preferences = new int[n];</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    public
+boolean wantsToChange (int potentialMate)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        for
+(int i = 0; i &lt; preferences.length; i++)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>            if
+(preferences[i] == currentMatch)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>            {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>               
+return false;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>            }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+else if (preferences[i] == potentialMate)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>            {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>               
+return true;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>            }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        return
+true;    // never reached</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    }</span></p>
+
+</div>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>L&#7899;p
+placeMan dùng &#273;&#7875; th&#7921;c hi&#7879;n th&#7911; t&#7909;c
+c&#432;&#7899;i cho ng&#432;&#7901;i &#273;àn ông (t&#7915; 2. &#273;&#7871;n
+15.)</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<div style='border:solid black 1.0pt;padding:12.0pt 0cm 12.0pt 0cm'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>private static
+void placeMan(Person[] men, Person[] women, int man)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>    {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        int
+womanPreferred = men[man].getPreference(men[man].getNextChoice());//nguoi phu
+nu ua thich</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        int
+spurnedMan;//tu choi</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        //Kiem
+tra nguoi phu nu cau hon ua thich da cuoi chua. neu chua thi cuoi luon cap nay</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        if
+(women[womanPreferred].getCurrentMatch() == Person.UNMATCHED)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+men[man].setCurrentMatch(womanPreferred);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+women[womanPreferred].setCurrentMatch(man);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-size:
+10.0pt;font-family:"Courier New";color:black'>        //Neu co gai nay muon
+doi vi thich anh nay hon nguoi co dang tam dinh hon</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        else if
+(women[womanPreferred].wantsToChange(man))</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+spurnedMan = women[womanPreferred].getCurrentMatch();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+men[man].setCurrentMatch(womanPreferred);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+women[womanPreferred].setCurrentMatch(man);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+men[spurnedMan].incrementNextChoice();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+placeMan(men, women, spurnedMan);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span style='font-size:
+10.0pt;font-family:"Courier New";color:black'>        //Khong cau hon duoc co
+gai nay, chuyen tiep cau hon co gai tiep theo</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        else</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+men[man].incrementNextChoice();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>           
+placeMan(men, women, man);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:14.4pt;border:none;padding:0cm'><span lang=VI
+style='font-size:10.0pt;font-family:"Courier New";color:black'>        }</span></p>
+
+</div>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>K&#7871;t
+qu&#7843; ki&#7875;m tra ch&#432;&#417;ng trình:</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>Input: </span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>          T&#7879;p có tên là marriage_in.txt.</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>          D&#7919; li&#7879;u&nbsp;:</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>                   </span><span
+lang=VI style='font-size:11.0pt;font-family:"Courier New"'>9</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   6 2 7 8 5 3 1 0 4</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   4 3 7 2 0 1 5 6 8</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   3 7 2 8 6 4 5 0 1</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   8 6 3 1 4 7 2 0 5</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   1 5 3 8 7 6 4 0 2</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   1 6 7 5 4 2 3 0 8</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   0 5 1 2 7 4 3 8 6</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   4 5 8 0 1 7 3 2 6</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   5 0 3 6 4 7 2 8 1</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   2 0 4 1 7 6 5 8 3</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   8 3 7 0 6 5 2 1 4</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   2 0 7 8 4 3 1 5 6</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   7 6 4 2 1 5 3 8 0</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   5 8 1 4 0 3 6 2 7</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   1 3 4 0 5 7 2 8 6</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   8 2 7 1 6 4 3 5 0</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   5 2 1 0 7 3 4 8 6</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>                   7 1 5 3 8 0 2 6 4</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>          </span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt;
+font-family:"Courier New"'>          Trong &#273;ó, <i>n</i>=9 là khai báo
+kích th&#432;&#7899;c bài toán. B&#7843;ng ma tr&#7853;n ti&#7871;p theo là
+danh sách thích      c&#7911;a Men (theo th&#7913; t&#7921; hàng là nh&#7919;ng
+ng&#432;&#7901;i &#273;àn ông và th&#7913; t&#7921; c&#7897;t là nh&#7919;ng
+ng&#432;&#7901;i ph&#7909; n&#7919;  thích t&#432;&#417;ng &#7913;ng v&#7899;i
+ng&#432;&#7901;i &#273;àn ông c&#7911;a hàng &#273;ó). T&#432;&#417;ng
+t&#7921;, b&#7843;ng ma tr&#7853;n d&#432;&#7899;i là Women’s       List</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'> 
+</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>K&#7871;t
+qu&#7843;,</span></p>
+
+<p class=CMU style='text-align:justify'><span lang=VI style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>Output&nbsp;:</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>          Xu&#7845;t ra t&#7879;p có tên
+marriage_out.txt</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>          </span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   9 couples</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 0 with woman 2</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 1 with woman 4</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 2 with woman 3</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 3 with woman 1</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 4 with woman 5</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 5 with woman 7</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 6 with woman 0</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 7 with woman 8</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   Pair man 8 with woman 6</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Courier New"'>                   End of Stable Marriage</span><span
+style='font-size:11.0pt'> </span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU style='text-align:justify'><b><span style='font-size:11.0pt'>5
+Tham kh&#7843;o</span></b></p>
+
+<p class=CMU style='text-align:justify'><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=36 valign=top style='width:26.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><b><span
+  lang=FR style='font-size:11.0pt'>[1]</span></b></p>
+  </td>
+  <td width=629 valign=top style='width:472.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><i><span
+  lang=FR style='font-size:11.0pt'>Dùng thu&#7853;t toán nhánh c&#7853;n và
+  thu&#7853;t toán vét c&#7841;n gi&#7843;i bài toán ng&#432;&#7901;i du
+  l&#7883;ch,</span></i><span lang=FR style='font-size:11.0pt'> Kim &#272;ình
+  S&#417;n, Báo cáo Project1, Khoa h&#7885;c máy tính, vi&#7879;n công
+  ngh&#7879; thông tin và truy&#7873;n thông, &#272;&#7841;i h&#7885;c Bách
+  Khoa Hà N&#7897;i</span></p>
+  <p class=CMU style='text-align:justify;background:transparent'><span lang=FR
+  style='font-size:11.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=36 valign=top style='width:26.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><b><span
+  lang=FR style='font-size:11.0pt'>[2]</span></b></p>
+  </td>
+  <td width=629 valign=top style='width:472.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify'><i><span style='font-size:11.0pt'>The
+  Stable Marriage Problem</span></i></p>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>William
+  Hunt Lane Department of Computer Science and Electrical Engineering,West
+  Virginia University, Morgantown, WV</span></p>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=36 valign=top style='width:26.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><b><span
+  lang=FR style='font-size:11.0pt'>[3]</span></b></p>
+  </td>
+  <td width=629 valign=top style='width:472.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify'><i><span style='font-size:11.0pt'>An
+  n-ary Constraint for the Stable Marriage Problem</span></i></p>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>Chris
+  Unsworth, Patrick Prosser Department of Computing Science University of
+  Glasgow, Scotland</span></p>
+  <p class=CMU style='text-align:justify'><span style='font-size:11.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=36 valign=top style='width:26.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><b><span
+  lang=FR style='font-size:11.0pt'>[4]</span></b></p>
+  </td>
+  <td width=629 valign=top style='width:472.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=CMU style='text-align:justify;background:transparent'><a
+  href="http://en.wikipedia.org/wiki/Stable_marriage_problem"><b><span lang=VI
+  style='font-size:11.0pt'>http://en.wikipedia.org/wiki/Stable_marriage_problem</span></b></a></p>
+  </td>
+ </tr>
+</table>
+
+<p class=CMU style='text-align:justify'><b><span lang=FR style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>

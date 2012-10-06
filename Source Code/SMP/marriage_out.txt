@@ -1,0 +1,20 @@
+Stable Marriage
+
+4 couples
+Pair man 0 with woman 3
+Pair man 1 with woman 2
+Pair man 2 with woman 1
+Pair man 3 with woman 0
+
+9 couples
+Pair man 0 with woman 2
+Pair man 1 with woman 4
+Pair man 2 with woman 3
+Pair man 3 with woman 1
+Pair man 4 with woman 5
+Pair man 5 with woman 7
+Pair man 6 with woman 0
+Pair man 7 with woman 8
+Pair man 8 with woman 6
+
+End of Stable Marriage

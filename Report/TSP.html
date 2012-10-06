@@ -1,0 +1,1546 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"TimesNewRoman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"TimesNewRoman";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TimesNewRoman;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SymbolMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"TimesNewRoman\,Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@SymbolMT";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:#365F91;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.CMU, li.CMU, div.CMU
+	{mso-style-name:CMU;
+	mso-style-link:"CMU Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	background:white;
+	font-size:13.0pt;
+	font-family:"TimesNewRoman";
+	color:black;}
+span.CMUChar
+	{mso-style-name:"CMU Char";
+	mso-style-link:CMU;
+	font-family:"TimesNewRoman";
+	color:black;
+	background:white;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-family:"Arial","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 42.45pt 72.0pt 72.0pt;}
+div.WordSection2
+	{page:WordSection2;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=CMU align=center style='text-align:center'><b><span style='font-size:
+16.0pt'>Dùng thu&#7853;t toán nhánh c&#7853;n và thu&#7853;t toán vét c&#7841;n
+</span></b></p>
+
+<p class=CMU align=center style='text-align:center'><b><span style='font-size:
+16.0pt'>gi&#7843;i bài toán ng&#432;&#7901;i du l&#7883;ch</span></b></p>
+
+<p class=CMU align=center style='text-align:center'><b><span style='font-size:
+16.0pt'>(Traveling Salesman Problem</span></b>)</p>
+
+<p class=CMU align=center style='text-align:center'>&nbsp;</p>
+
+<p class=CMU align=center style='text-align:center'><span style='font-size:
+11.0pt;font-family:"Times New Roman","serif"'>Kim &#272;ình S&#417;n, MSSV
+20102089, CNTT 4, K55</span></p>
+
+<p class=CMU align=center style='text-align:center'><span style='font-size:
+11.0pt;font-family:"Times New Roman","serif"'>Báo cáo Project1, ngành Khoa
+h&#7885;c máy tính</span></p>
+
+<p class=CMU align=center style='text-align:center'><span style='font-size:
+11.0pt;font-family:"Times New Roman","serif"'>Vi&#7879;n Công ngh&#7879; thông
+tin và truy&#7873;n thông, &#272;&#7841;i h&#7885;c Bách Khoa Hà N&#7897;i</span></p>
+
+<p class=CMU align=center style='text-align:center'><span style='font-size:
+11.0pt'>&nbsp;</span></p>
+
+<p class=CMU align=center style='text-align:center'><span style='font-size:
+11.0pt'>&nbsp;</span></p>
+
+<p class=CMU align=left style='text-align:left;text-indent:21.3pt'><span
+style='font-size:11.0pt'>T&#7915; vi&#7871;t t&#7855;t: TSP    Traveling
+Salesman Problem</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"TimesNewRoman";color:black'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2>
+
+<p class=CMU><b><span style='font-size:11.0pt'>1 Gi&#7899;i thi&#7879;u bài
+toán</span></b></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Bài toán toán ng&#432;&#7901;i du
+l&#7883;ch thu&#7897;c d&#7841;ng các bài toán N-P khó trong l&#297;nh
+v&#7921;c t&#7889;i &#432;u t&#7893; h&#7907;p c&#7911;a lý thuy&#7871;t khoa
+h&#7885;c máy tính. Là m&#7897;t bài toán r&#7845;t n&#7893;i ti&#7871;ng và
+trong th&#7921;c t&#7871; nó th&#432;&#7901;ng hay x&#7843;y ra. Phát
+bi&#7875;u bài toán nh&#432; sau:</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>          M&#7897;t
+ng&#432;&#7901;i du l&#7883;ch mu&#7889;n &#273;i tham quan </span></i><span
+style='font-size:11.0pt'>n<i> thành ph&#7889; </i></span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=72 height=17
+src="TSP_files/image001.png"></span><span style='font-size:11.0pt'>. <i>Xu&#7845;t
+phát t&#7915; thành</i> </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=11 height=17
+src="TSP_files/image002.png"></span><span style='font-size:11.0pt'> <i>ph&#7889;
+nào &#273;ó, ng&#432;&#7901;i này mu&#7889;n &#273;i qua t&#7845;t c&#7843; </i>n<i>
+thành ph&#7889; trên sao cho m&#7895;i thành ph&#7889; &#273;i qua &#273;úng
+m&#7897;t l&#7847;n r&#7891;i tr&#7903; v&#7873; thành ph&#7889; ban
+&#273;&#7847;u. Bi&#7871;t </i></span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=14 height=19
+src="TSP_files/image003.png"></span><i><span style='font-size:11.0pt'> là chi
+phí &#273;i l&#7841;i t&#7915; thành ph&#7889; </span></i><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=11 height=17
+src="TSP_files/image002.png"></span><i><span style='font-size:11.0pt'> &#273;&#7871;n
+thành ph&#7889; </span></i><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=11 height=19
+src="TSP_files/image004.png"></span><i><span style='font-size:11.0pt'>. Tìm
+m&#7897;t hành trình cho ng&#432;&#7901;i du l&#7883;ch sao cho t&#7893;ng chi
+phí &#273;i l&#7841;i cho c&#7843; hành trình &#273;ó là nh&#7887; nh&#7845;t.</span></i></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Ta có th&#7875; thi&#7871;t
+l&#7853;p t&#432;&#417;ng &#7913;ng 1-1 gi&#7919;a các hành trình</span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=295 height=20
+src="TSP_files/image005.png"></span><span style='font-size:11.0pt'> là hoán
+v&#7883; c&#7911;a t&#7853;p (1,2,3,…n). Khi &#273;ó t&#7893;ng chi phí trên
+hành trình theo hoán v&#7883; </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=9 height=17 src="TSP_files/image006.png"></span><span
+style='font-size:11.0pt'> là:</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=150 height=48 src="TSP_files/image007.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>V&#7899;i </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=103 height=17
+src="TSP_files/image008.png"></span><span style='font-size:11.0pt'>. Khi
+&#273;ó, yêu c&#7847;u bài toán t&#432;&#417;ng &#273;&#432;&#417;ng v&#7899;i
+d&#7841;ng bài toán t&#7889;i &#432;u t&#7893; h&#7907;p sau:</span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=133 height=17 src="TSP_files/image009.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Trong tr&#432;&#7901;ng h&#7907;p
+không t&#7891;n t&#7841;i &#273;&#432;&#7901;ng &#273;i gi&#7919;a hai thành
+ph&#7889; nào &#273;ó ch&#7859;ng h&#7841;n </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=11 height=17
+src="TSP_files/image002.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=11 height=19
+src="TSP_files/image004.png"></span><i><span style='font-size:11.0pt'> </span></i><span
+style='font-size:11.0pt'>khi &#273;ó ta có th&#7875; gán </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=56 height=19
+src="TSP_files/image010.png"></span><span style='font-size:11.0pt'>. Bài toán
+có th&#7875; bi&#7875;u di&#7877;n b&#7903;i m&#7897;t &#273;&#7891; th&#7883;
+vô h&#432;&#7899;ng có tr&#7885;ng s&#7889; <b>G=(V, E)</b>. Trong &#273;ó,
+m&#7895;i thành ph&#7889; t&#432;&#7907;ng tr&#432;ng b&#7903;i m&#7897;t
+&#273;&#7881;nh, c&#7841;nh n&#7889;i g&#7919;a hai &#273;&#7881;nh
+t&#432;&#7907;ng tr&#432;ng cho &#273;&#432;&#7901;ng &#273;i gi&#7919;a 2
+thành ph&#7889; &#273;&#432;&#7907;c n&#7889;i và tr&#7885;ng s&#7889; trên
+c&#7841;nh &#273;ó b&#7857;ng chi phí &#273;i l&#7841;i gi&#7919;a 2 thành
+ph&#7889; này. Nh&#432; v&#7853;y yêu c&#7847;u bài toán t&#432;&#417;ng
+&#273;&#432;&#417;ng v&#7899;i vi&#7879;c tìm m&#7897;t chu trình Halminton mà
+t&#7893;ng tr&#7885;ng s&#7889; trên chu trình là ng&#7855;n nh&#7845;t. </span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>          T&#7915; &#273;ó, ta có
+th&#7875; s&#7917; d&#7909;ng nhi&#7873;u ph&#432;&#417;ng pháp &#273;&#7875;
+gi&#7843;i quy&#7871;t v&#7845;n &#273;&#7873; &#273;&#432;&#7907;c nêu ra
+d&#7921;a trên lý thuy&#7871;t v&#7873; &#273;&#7891; th&#7883; hay các
+thu&#7853;t toán th&#7911; t&#7909;c khác. &#7902; báo cáo này ch&#7881;
+&#273;&#7873; c&#7853;p &#273;&#7871;n hai ph&#432;&#417;ng pháp dùng
+thu&#7853;t toán nhánh c&#7853;n và thu&#7853;t toán vét c&#7841;n.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>2 S&#7917; d&#7909;ng
+thu&#7853;t toán vét c&#7841;n</span></b></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Ý t&#432;&#7903;ng c&#7911;a
+ph&#432;&#417;ng pháp r&#7845;t &#273;&#417;n gi&#7843;n, &#273;ó là xét
+h&#7871;t t&#7845;t c&#7843; các hành trình, m&#7895;i hành trình tính
+t&#7893;ng chi phí riêng, sau &#273;ó l&#7921;a ch&#7885;n hành trình có chi
+phí nh&#7887; nh&#7845;t. Tuy nhiên, d&#7877; th&#7845;y r&#7857;ng
+ph&#432;&#417;ng pháp này t&#7887; ra không kh&#7843; quan vì vi&#7879;c
+duy&#7879;t trên t&#7845;t c&#7843; các hành trình là m&#7897;t công vi&#7879;c
+h&#7871;t s&#7913;c khó kh&#259;n, vì ta ph&#7843;i duy&#7879;t trên t&#7845;t
+c&#7843; </span><span style='font-size:11.0pt;line-height:115%;font-family:
+"Calibri","sans-serif";position:relative;top:2.5pt'><img width=12 height=17
+src="TSP_files/image011.png"></span><span style='font-size:11.0pt'> hành trình.
+Ví d&#7909;, ta xét trên m&#7897;t máy tính có t&#7889;c &#273;&#7897; x&#7917;
+lý 1 t&#7927; phép tính trên 1 giây, v&#7899;i kích th&#432;&#7899;c bài toán
+là </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=44 height=17
+src="TSP_files/image012.png"></span><span style='font-size:11.0pt'>, th&#7901;i
+gian tính cho 19! phép toán vào kho&#7843;ng 19!/(365 x 24 x 3600)</span><span
+style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8776;</span><span
+style='font-size:11.0pt'> 3,8 n&#259;m (!).</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"Courier New"'>void</span></b><span
+style='font-size:11.0pt;font-family:"Courier New"'> vetCan()</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>1.  <b>int
+</b>chiPhi=+infty, index=1;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>2.  <b>for</b>
+<b>int</b> i=0 <b>to</b> n! <b>do</b>/*Duyet het                            cac
+hoan vi */</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>3.      chonHoanVi[i];/*chon
+hoan                                 vi thu i*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>4.      <b>int</b>
+cost=tinhChiPhi();</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>5.      <b>if</b>
+cost&lt;chiPhi <b>then</b></span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt;font-family:"Courier New"'>6
+                 chiPhi=cost;/*cap nhat                                    lai
+chi phi*/</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt;font-family:"Courier New"'>7         
+ index=i;//luu lai thu tu cua hoan vi</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt'>&#272;&#7875; xây
+d&#7921;ng &#273;&#7911; các dãy hoán v&#7883;, ta th&#7921;c hi&#7879;n
+th&#7911; t&#7909;c sau:</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Khai báo m&#7843;ng&nbsp;: </span><span
+style='font-size:11.0pt;font-family:"Courier New"'>int hoanvi[size][n]
+(size=n!)</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt'>D&#7919; li&#7879;u input
+là</span><span lang=FR style='font-size:11.0pt;font-family:"Courier New"'> </span><span
+lang=FR style='font-size:11.0pt;font-family:"Courier New"'>T[ ][ ]={…}//n hang
+, n cot </span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt'>M&#7843;ng</span><span
+lang=FR style='font-size:11.0pt;font-family:"Courier New"'> t[n]={0,0,0,…,0} </span><span
+lang=FR style='font-size:11.0pt'>&#273;&#7875; &#273;ánh d&#7845;u th&#7913;
+t&#7921; &#273;&#7881;nh &#273;ã duy&#7879;t. (t[i]=0 khi ch&#432;a
+&#273;&#432;&#7907;c duy&#7879;t và t[i]=1 n&#7871;u &#273;ã
+&#273;&#432;&#7907;c duy&#7879;t).</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"Courier New"'>permT</span></b><span
+style='font-size:11.0pt;font-family:"Courier New"'>(<b>int</b> start, <b>int</b>
+next)</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>//them
+T[start][next] vao hanh trinh</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>1.  hoanvi[start][next]=</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>           
+T[start][next];</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt;font-family:"Courier New"'>2. 
+t[next]=1;//Da duyet dinh nay   </span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt;font-family:"Courier New"'>//De
+qui tiep tu dinh t[next]</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>3.  <b>for
+int </b>i=0 <b>to</b> n <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>4.                 <b>if</b>
+(t[i]==0)<b>then</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>5.                   
+permT(next,i);</span><span style='font-size:11.0pt;font-family:"Courier New"'>   </span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>          D&#7877; ki&#7875;m tra
+r&#7857;ng hàm <i>permT(start,next)</i> duy&#7879;t &#273;&#7911; n!</span><span
+style='font-size:11.0pt;font-family:"Courier New"'> </span><span
+style='font-size:11.0pt'>hoán v&#7883; c&#7911;a t&#7853;p {1,2,3,…,n}
+(b&#7843;n thân trong m&#7895;i l&#7847;n &#273;&#7879; qui th&#7913; <i>k</i> g&#7885;i
+l&#7841;i <i>k</i> l&#7847;n hàm permT, và s&#7889; l&#7847;n g&#7885;i vòng
+l&#7863;p gi&#7843;m &#273;i vì ta &#273;ã s&#7917; d&#7909;ng m&#7843;ng t[ ]
+ki&#7875;m soát &#273;&#7881;nh &#273;ã &#273;&#432;&#7907;c duy&#7879;t sau
+m&#7895;i l&#7847;n g&#7885;i).  </span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>3 S&#7917; d&#7909;ng
+thu&#7853;t toán nhánh c&#7853;n</span></b></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>3.1 T&#432; t&#432;&#7903;ng
+thu&#7853;t toán nhánh c&#7853;n</span></b></p>
+
+<p class=CMU><span style='font-size:11.0pt'>T&#432; t&#432;&#7903;ng g&#7891;m
+các phép xây d&#7921;ng gi&#7843;m b&#7899;t s&#7921; l&#7921;a ch&#7885;n
+trong khâu duy&#7879;t các tr&#432;&#7901;ng h&#7907;p.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>          Xét bài toán qui
+ho&#7841;ch r&#7901;i r&#7841;c sau: min Z=f(X), trong &#273;ó </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=38 height=17
+src="TSP_files/image013.png"></span><span style='font-size:11.0pt'> là
+t&#7853;p h&#7919;u h&#7841;n.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>B&#432;&#7899;c 1: </span></i><span
+style='font-size:11.0pt'>Tính c&#7853;n d&#432;&#7899;i.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Tìm c&#7853;n d&#432;&#7899;i
+c&#7911;a hàm m&#7909;c tiêu f(X) trên t&#7853;p các ph&#432;&#417;ng án G
+ho&#7863;c t&#7853;p con G’ nào &#273;ó c&#7911;a G là </span><span
+style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#958;</span><span
+style='font-size:11.0pt'>(G)( ho&#7863;c </span><span style='font-size:11.0pt;
+font-family:"Cambria Math","serif"'>&#958;</span><span style='font-size:11.0pt'>(G’)
+)sao cho: </span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=129 height=17
+src="TSP_files/image014.png"></span><span style='font-size:11.0pt'> ho&#7863;c </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=137 height=17
+src="TSP_files/image015.png"></span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>B&#432;&#7899;c 2:</span></i><span
+style='font-size:11.0pt'> Chia t&#7853;p các ph&#432;&#417;ng án G thành các
+tr&#432;&#7901;ng h&#7907;p con- r&#7869; nhánh. Th&#7913; t&#7921; chia
+nh&#432; sau:</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>- <b>B&#432;&#7899;c 1:</b> &#272;&#7863;t
+G<sup>0</sup></span><span style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8801;</span><span
+style='font-size:11.0pt'>G, th&#7921;c hi&#7879;n chia G<sup>0</sup> thành
+h&#7919;u h&#7841;n các t&#7853;p con </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=81 height=20
+src="TSP_files/image016.png"></span><span style='font-size:11.0pt'>.     </span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>-  <b>B&#432;&#7899;c <i>k</i></b></span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=11 height=17
+src="TSP_files/image017.png"></span><b><span style='font-size:11.0pt'>1: </span></b><span
+style='font-size:11.0pt'>Gi&#7843; s&#7917; có các t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=82 height=21
+src="TSP_files/image018.png"></span><span style='font-size:11.0pt'>c&#7847;n
+ti&#7871;p t&#7909;c chia nhánh. Ta ch&#7885;n t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=31 height=22
+src="TSP_files/image019.png"></span><span style='font-size:11.0pt'> theo qui
+t&#7855;c nào &#273;ó và chia thành các t&#7853;p con </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=163 height=22
+src="TSP_files/image020.png"></span><span style='font-size:11.0pt'>. Khi
+&#273;ó, t&#7853;p c&#7847;n chia nhánh ti&#7871;p theo là:</span></p>
+
+<p class=CMU align=left style='text-align:left'><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=278 height=22 src="TSP_files/image021.png"></span></p>
+
+<p class=CMU align=left style='text-align:left'><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=97 height=22
+src="TSP_files/image022.png"></span><span style='font-size:11.0pt'>        </span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&#272;&#7863;t l&#7841;i tên các
+t&#7853;p c&#7847;n chia thành: </span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=82 height=21 src="TSP_files/image018.png"></span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>B&#432;&#7899;c 3:</span></i><span
+style='font-size:11.0pt'> Tính l&#7841;i &#273;ánh giá</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>N&#7871;u t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=48 height=17
+src="TSP_files/image023.png"></span><span style='font-size:11.0pt'>thì </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=188 height=19
+src="TSP_files/image024.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Vì th&#7871;, v&#7899;i t&#7853;p
+G’ &#273;&#432;&#7907;c chia thành các t&#7853;p con             </span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=76 height=17
+src="TSP_files/image025.png"></span><span style='font-size:11.0pt'> sao cho </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=77 height=18
+src="TSP_files/image026.png"></span><span style='font-size:11.0pt'> thì
+c&#7853;n b&#7845;t kì                 c&#7911;a t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=15 height=18
+src="TSP_files/image027.png"></span><span style='font-size:11.0pt'> &#273;&#7873;u
+có </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=83 height=18
+src="TSP_files/image028.png"></span><span style='font-size:11.0pt'>, m&#7885;i <i>i</i>=1,..,s.
+Trong tình hu&#7889;ng c&#7909; th&#7875; ta có th&#7875; nh&#7853;n
+&#273;&#432;&#7907;c &#273;ánh giá t&#7889;t, t&#7913;c là &#273;&#7889;i
+v&#7899;i m&#7897;t giá tr&#7883; <i>i </i>nào &#273;ó </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=83 height=18
+src="TSP_files/image028.png"></span><span style='font-size:11.0pt'>,</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>B&#432;&#7899;c 4:</span></i><span
+style='font-size:11.0pt'> Tính ph&#432;&#417;ng án</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&#7902; &#273;ây, tùy vào m&#7895;i
+bài toán c&#7909; th&#7875; (ví d&#7909; ta &#273;ang xét bài toán
+ng&#432;&#7901;i du l&#7883;ch) ta có th&#7875; có nh&#7919;ng ph&#432;&#417;ng
+pháp khác nhau cho vi&#7879;c l&#7921;a ch&#7885;n ph&#432;&#417;ng án.
+Nh&#7901; vào m&#7895;i ph&#432;&#417;ng án tìm &#273;&#432;&#7907;c
+tr&#432;&#7899;c &#273;ó, ta s&#7869; c&#7843;i ti&#7871;n &#273;&#432;&#7907;c
+c&#7853;n trên giá tr&#7883; hàm m&#7909;c tiêu t&#7889;t nh&#7845;t t&#7841;i
+th&#7901;i &#273;i&#7875;m &#273;ó.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>B&#432;&#7899;c 5:</span></i><span
+style='font-size:11.0pt'> Tiêu chu&#7849;n t&#7889;i &#432;u</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Gi&#7843; s&#7917; </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=73 height=18
+src="TSP_files/image029.png"></span><span style='font-size:11.0pt'> và
+ph&#432;&#417;ng án<i> </i></span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=42 height=20
+src="TSP_files/image030.png"></span><span style='font-size:11.0pt'> th&#7887;a
+mãn &#273;i&#7873;u ki&#7879;n </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=220 height=21
+src="TSP_files/image031.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Thì </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=8 height=20 src="TSP_files/image032.png"></span><span
+style='font-size:11.0pt'> là ph&#432;&#417;ng án t&#7889;i &#432;u c&#7911;a
+bài toán.</span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>B&#432;&#7899;c 6:</span></i><span
+style='font-size:11.0pt'> &#272;ánh giá &#273;&#7897; chính xác c&#7911;a
+l&#7901;i gi&#7843;i x&#7845;p x&#7881;. </span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>N&#7871;u </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=73 height=18
+src="TSP_files/image029.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=130 height=18
+src="TSP_files/image033.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=8 height=20 src="TSP_files/image032.png"></span><span
+style='font-size:11.0pt'> là m&#7897;t ph&#432;&#417;ng án c&#7911;a bài toán
+thì </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=143 height=21
+src="TSP_files/image034.png"></span><span style='font-size:11.0pt'>. Và
+n&#7871;u </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=79 height=21
+src="TSP_files/image035.png"></span><span style='font-size:11.0pt'> &#273;&#7911;
+nh&#7887; thì ta có th&#7875; l&#7845;y </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=8 height=20 src="TSP_files/image032.png"></span><span
+style='font-size:11.0pt'> làm l&#7901;i gi&#7843;i x&#7845;p x&#7881; cho bài
+toán.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>3.2 Thu&#7853;t toán nhánh
+c&#7853;n gi&#7843;i bài toán ng&#432;&#7901;i du l&#7883;ch</span></b></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Ta có ma tr&#7853;n chi phí </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.5pt'><img width=104 height=25
+src="TSP_files/image036.png"></span><span style='font-size:11.0pt'> bi&#7875;u
+di&#7877;n                                chi ti&#7871;t chi phí qua l&#7841;i
+gi&#7919;a n thành ph&#7889; v&#7899;i nhau. Gi&#7843; thi&#7871;t </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=41 height=19
+src="TSP_files/image037.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=56 height=19
+src="TSP_files/image010.png"></span><span style='font-size:11.0pt'> khi không
+có &#273;&#432;&#7901;ng t&#7915; thành ph&#7889; </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=11 height=17
+src="TSP_files/image002.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=11 height=19
+src="TSP_files/image004.png"></span><span style='font-size:11.0pt'>. Khi
+&#273;ó, bài toán ng&#432;&#7901;i du l&#7883;ch có th&#7875; vi&#7871;t
+d&#432;&#7899;i d&#7841;ng:</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=119 height=57 src="TSP_files/image038.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>(1).</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Trong &#273;ó, </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=42 height=19
+src="TSP_files/image039.png"></span><span style='font-size:11.0pt'> n&#7871;u </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=11 height=17
+src="TSP_files/image002.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=11 height=19
+src="TSP_files/image004.png"></span><span style='font-size:11.0pt'> thu&#7897;c
+hành trình và b&#7857;ng 0 n&#7871;u ng&#432;&#7907;c l&#7841;i. Khi &#7845;y:</span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=144 height=50 src="TSP_files/image040.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>(2).</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=144 height=48 src="TSP_files/image041.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>(3).</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>T&#7853;p t&#7845;t c&#7843; các
+ph&#432;&#417;ng án c&#7911;a bài toán (t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=14 height=17
+src="TSP_files/image042.png"></span><span style='font-size:11.0pt'> h&#7919;u
+h&#7841;n )&#273;&#432;&#7907;c chia nh&#7887; thành các t&#7853;p con
+r&#7901;i nhau, m&#7895;i t&#7853;p con s&#7869; g&#7891;m các ph&#432;&#417;ng
+án &#273;i qua ho&#7863;c không &#273;i qua m&#7897;t s&#7889; c&#7863;p thành
+ph&#7889; xác &#273;&#7883;nh trong quá trình gi&#7843;i. M&#7895;i t&#7853;p
+con này &#273;&#432;&#7907;c gán v&#7899;i m&#7897;t s&#7889; th&#7921;c không
+âm bi&#7875;u di&#7877;n c&#7853;n d&#432;&#7899;i c&#7911;a chi phí c&#7911;a
+m&#7885;i ph&#432;&#417;ng án thu&#7897;c t&#7853;p này. T&#7853;p con </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=14 height=17
+src="TSP_files/image043.png"></span><span style='font-size:11.0pt'>  nào
+&#273;ó có c&#7853;n d&#432;&#7899;i nh&#7887; nh&#7845;t s&#7869; có
+nhi&#7873;u kh&#7843; n&#259;ng ch&#7913;a ph&#432;&#417;ng án t&#7889;i
+&#432;u và s&#7869; &#273;&#432;&#7907;c ch&#7885;n &#273;&#7875; ti&#7871;p
+t&#7909;c phân nhánh. Khi phân </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=89 height=19
+src="TSP_files/image044.png"></span><span style='font-size:11.0pt'> sao cho các
+ph&#432;&#417;ng án trong </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=20 height=19
+src="TSP_files/image045.png"></span><span style='font-size:11.0pt'> b&#7855;t
+bu&#7897;c ph&#7843;i &#273;i qua c&#7863;p thành ph&#7889; </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=13 height=17
+src="TSP_files/image046.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=13 height=17
+src="TSP_files/image047.png"></span><span style='font-size:11.0pt'> nào
+&#273;ó, ng&#432;&#7907;c l&#7841;i các ph&#432;&#417;ng án thu&#7897;c </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=20 height=19
+src="TSP_files/image048.png"></span><span style='font-size:11.0pt'>thì không
+ch&#7913;a c&#7863;p thành ph&#7889; </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:2.5pt'><img width=13 height=17
+src="TSP_files/image046.png"></span><span style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=13 height=17
+src="TSP_files/image047.png"></span><span style='font-size:11.0pt'>. Khi
+m&#7897;t t&#7853;p con nào ch&#7881; g&#7891;m m&#7897;t ph&#432;&#417;ng án
+duy nh&#7845;t, ta s&#7869; c&#7853;p nh&#7853;t tính chi phí <i>C</i>
+c&#7911;a ph&#432;&#417;ng án này. T&#7915; &#273;ó, ta c&#7843;i ti&#7871;n
+&#273;&#432;&#7907;c ph&#432;&#417;ng án t&#7889;t nh&#7845;t hi&#7879;n
+t&#7841;i. Giá tr&#7883; hàm m&#7909;c tiêu c&#7911;a bài toán &#7913;ng
+v&#7899;i ph&#432;&#417;ng án t&#7889;t nh&#7845;t hi&#7879;n t&#7841;i
+&#273;&#432;&#7907;c g&#7885;i là <i>giá tr&#7883; k&#7881; l&#7909;c</i>. Rõ
+ràng, t&#7853;p con nào có c&#7853;n d&#432;&#7899;i l&#7899;n h&#417;n giá
+tr&#7883; k&#7881; l&#7909;c thì ch&#7855;c ch&#7855;n không ph&#7843;i là
+ph&#432;&#417;ng án t&#7889;i &#432;u, do &#273;ó ta có th&#7875; b&#7887; qua
+không chia nhánh ti&#7871;p nh&#7919;ng t&#7853;p này. Qua trình chia nhánh
+k&#7871;t thúc khi không còn t&#7853;p con nào c&#7847;n chia nhánh ti&#7871;p
+và ph&#432;&#417;ng án t&#7889;t nh&#7845;t hi&#7879;n t&#7841;i s&#7869; là
+ph&#432;&#417;ng án t&#7889;i &#432;u c&#7911;a bài toán. Tính h&#7919;u
+h&#7841;n c&#7911;a thu&#7853;t toán &#273;&#432;&#7907;c suy t&#7915; tính
+h&#7919;u h&#7841;n c&#7911;a t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=14 height=17
+src="TSP_files/image042.png"></span><span style='font-size:11.0pt'>.</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>Th&#7911; t&#7909;c tính
+c&#7853;n</span></b></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>B&#7893; &#273;&#7873; </span></b><i><span
+style='font-size:11.0pt'>Ph&#432;&#417;ng án t&#7889;i &#432;u </span></i><span
+style='font-size:11.0pt'>x<sup>*</sup> <i>v&#7851;n còn là t&#7889;i &#432;u
+n&#7871;u ma tr&#7853;n chi phí C &#273;&#432;&#7907;c “rút g&#7885;n”
+b&#7903;i ma tr&#7853;n C’ v&#7899;i:</i></span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=210 height=19 src="TSP_files/image049.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>(4).</span></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>Trong &#273;ó, </span></i><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=30 height=17
+src="TSP_files/image050.png"></span><i><span style='font-size:11.0pt'> là
+nh&#7919;ng s&#7889; th&#7921;c b&#7845;t kì.</span></i></p>
+
+<p class=CMU><i><span style='font-size:11.0pt'>Ch&#7913;ng minh.</span></i><span
+style='font-size:11.0pt'> Do x<sup>*</sup> là ph&#432;&#417;ng án t&#7889;i
+&#432;u nên </span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=170 height=50 src="TSP_files/image051.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>T&#7915; (1) (2) (3) và (4) ta có,</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=641 height=100 src="TSP_files/image052.png"></span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=559 height=50 src="TSP_files/image053.png"></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Cambria Math","serif"'>&#8718;</span><span
+style='font-size:11.0pt'>.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&#272;&#7875; ti&#7879;n l&#7907;i,
+ta ch&#7885;n các s&#7889; <i> </i></span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=30 height=17
+src="TSP_files/image050.png"></span><i><span style='font-size:11.0pt'> </span></i><span
+style='font-size:11.0pt'>sao cho </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=45 height=19
+src="TSP_files/image054.png"></span><span style='font-size:11.0pt'> và ma
+tr&#7853;n C’ trên m&#7895;i hàng và m&#7895;i c&#7897;t có ít nh&#7845;t
+m&#7897;t entry là <i>zero</i>. </span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>          Phép toán (4)
+&#273;&#432;&#7907;c g&#7885;i là phép rút g&#7885;n <i>ma tr&#7853;n  </i>hay <i>th&#7911;
+t&#7909;c rút g&#7885;n</i>. H&#7857;ng s&#7889; </span><span style='font-size:
+11.0pt;font-family:"Cambria Math","serif"'>&#947;</span><span style='font-size:
+11.0pt'>=</span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=103 height=18
+src="TSP_files/image055.png"></span><span style='font-size:11.0pt'> &#273;&#432;&#7907;c
+g&#7885;i là <i>h&#7857;ng s&#7889; rút g&#7885;n</i>. Khi &#273;ó,</span><span
+style='font-size:11.0pt;font-family:"Cambria Math","serif"'> &#947; </span><span
+style='font-size:11.0pt'>chính là c&#7853;n d&#432;&#7899;i cho giá tr&#7883;
+hàm m&#7909;c tiêu c&#7911;a bài toán.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>Th&#7911; t&#7909;c phân nhánh</span></b></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Gi&#7843; s&#7917; c&#7847;n phân
+nhánh t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=48 height=19
+src="TSP_files/image056.png"></span><span style='font-size:11.0pt'>. </span><span
+lang=FR style='font-size:11.0pt'>Ta chia thành hai t&#7853;p </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=18 height=19
+src="TSP_files/image057.png"></span><span lang=FR style='font-size:11.0pt'> và </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=22 height=19
+src="TSP_files/image058.png"></span><span lang=FR style='font-size:11.0pt'> nh&#432;
+sau:</span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=154 height=19 src="TSP_files/image059.png"></span></p>
+
+<p class=CMU><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=158 height=19 src="TSP_files/image060.png"></span></p>
+
+<p class=CMU><span lang=FR style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Trong &#273;ó, </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=19 height=17
+src="TSP_files/image061.png"></span><span style='font-size:11.0pt'> ch&#432;a
+xác &#273;&#7883;nh trong </span><span
+style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=15 height=19
+src="TSP_files/image062.png"></span><span style='font-size:11.0pt'>. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:14.2pt;line-height:normal;text-autospace:none'><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>C&#7863;p </span><span
+lang=VI style='font-size:15.0pt;font-family:"TimesNewRoman"'>(</span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>r</span></i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>, </span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>s</span></i><span
+lang=VI style='font-size:15.0pt;font-family:"TimesNewRoman"'>) </span><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>dùng &#273;&#7875;
+phân nhánh &#273;&#432;&#7907;c ch&#7885;n sao cho t&#7853;p </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=22 height=22
+src="TSP_files/image063.png"></span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'> </span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>có nhi&#7873;u kh&#7843; n&#259;ng</span><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'> </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>ch&#7913;a ph&#432;&#417;ng án
+t&#7889;i &#432;u, còn t&#7853;p </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=18 height=22
+src="TSP_files/image064.png"></span><i><span lang=VI style='font-size:8.5pt;
+font-family:"TimesNewRoman"'> </span></i><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>thì không. Nói cách khác, </span><span lang=VI
+style='font-size:15.0pt;font-family:"TimesNewRoman"'>(</span><i><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>r</span></i><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>, </span><i><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>s</span></i><span lang=VI
+style='font-size:15.0pt;font-family:"TimesNewRoman"'>) </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>&#273;&#432;&#7907;c ch&#7885;n
+sao cho hi&#7879;u s&#7889; các c&#7853;n d&#432;&#7899;i c&#7911;a </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=22 height=22
+src="TSP_files/image063.png"></span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'> </span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>và </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=18 height=22
+src="TSP_files/image064.png"></span><i><span lang=VI style='font-size:8.5pt;
+font-family:"TimesNewRoman"'> </span></i><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>là l&#7899;n nh&#7845;t có th&#7875; &#273;&#432;&#7907;c.
+&#272;&#7875; gi&#7843;i quy&#7871;t v&#7845;n &#273;&#7873; này, ta ch&#7881;
+c&#7847;n xét t&#7853;p các ph&#432;&#417;ng án ban &#273;&#7847;u </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=14 height=20
+src="TSP_files/image065.png"></span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>, vì m&#7885;i bài toán con nh&#7853;n &#273;&#432;&#7907;c
+v&#7873; sau có cùng c&#7845;u trúc nh&#432; &#273;&#7889;i v&#7899;i bài toán
+ban &#273;&#7847;u. Gi&#7843; s&#7917; ma tr&#7853;n chi phí </span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>C </span></i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>&#273;ã &#273;&#432;&#7907;c
+rút g&#7885;n , ngh&#297;a là </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=14 height=22
+src="TSP_files/image066.png"></span><i><span lang=VI style='font-size:8.5pt;
+font-family:"TimesNewRoman"'> </span></i><span lang=VI style='font-size:11.5pt;
+font-family:"Courier New"'>&#8805;</span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'> </span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>0, </span><span lang=VI style='font-size:11.5pt;
+font-family:"Cambria Math","serif"'>&#8704;</span><i><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>i</span></i><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>, </span><i><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>j </span></i><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>và trên m&#7895;i hàng, m&#7895;i
+c&#7897;t c&#7911;a </span><i><span lang=VI style='font-size:11.5pt;font-family:
+"TimesNewRoman"'>C </span></i><span lang=VI style='font-size:11.5pt;font-family:
+"TimesNewRoman"'>có ít nh&#7845;t m&#7897;t s&#7889; 0. T&#7853;p </span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>S</span></i><span
+lang=VI style='font-size:8.5pt;font-family:"TimesNewRoman"'>0 </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>&#273;&#432;&#7907;c chia
+thành hai t&#7853;p r&#7901;i nhau </span><i><span lang=VI style='font-size:
+11.5pt;font-family:"TimesNewRoman"'>S</span></i><span lang=VI style='font-size:
+8.5pt;font-family:"TimesNewRoman"'>1 </span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>và </span><i><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>S</span></i><span lang=VI style='font-size:8.5pt;
+font-family:"TimesNewRoman"'>2 </span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>v&#7899;i</span><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>.</span></p>
+
+<p class=CMU align=center style='text-align:center'><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=148 height=17
+src="TSP_files/image067.png"></span><span style='font-size:11.0pt'>,</span></p>
+
+<p class=CMU align=center style='text-align:center'><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:3.0pt'><img width=149 height=17
+src="TSP_files/image068.png"></span><span style='font-size:11.0pt'>,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none'><span lang=VI style='font-size:11.5pt;font-family:
+"TimesNewRoman"'>Trong t&#7853;p </span><i><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>S</span></i><span lang=VI style='font-size:8.5pt;
+font-family:"TimesNewRoman"'>2 </span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>c&#7845;u trúc bài toán không thay &#273;&#7893;i, tr&#7915;
+ra hàng </span><i><span lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>r
+</span></i><span lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>và c&#7897;t
+</span><i><span lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>s </span></i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>b&#7883; lo&#7841;i, b&#7903;i</span><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'> </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>vì &#273;ã &#273;i t&#7915; </span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>r </span></i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>&#273;&#7871;n </span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>s </span></i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>thì không th&#7875;
+&#273;i t&#7915; </span><i><span lang=VI style='font-size:11.5pt;font-family:
+"TimesNewRoman"'>r </span></i><span lang=VI style='font-size:11.5pt;font-family:
+"TimesNewRoman"'>&#273;&#7871;n b&#7845;t c&#7913; n&#417;i nào</span><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'> </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>khác, và c&#361;ng không
+&#273;&#432;&#7907;c</span><span lang=VI style='font-size:11.5pt;font-family:
+"TimesNewRoman"'> </span><span lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>phép
+&#273;i t&#7915; b&#7845;t c&#7913; &#273;âu vào </span><i><span lang=VI
+style='font-family:"TimesNewRoman"'>s</span></i><span lang=VI style='font-size:
+11.5pt;font-family:"TimesNewRoman"'>. Các hàng và c&#7897;t còn l&#7841;i ch&#7881;
+ch&#7913;a các ph&#7847;n t&#7917; không âm, vì</span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'> </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>th&#7871; &#7913;ng v&#7899;i </span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>S</span></i><span
+lang=VI style='font-size:8.5pt;font-family:"TimesNewRoman"'>2 </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>m&#7897;t c&#7853;n d&#432;&#7899;i
+&#273;&#7889;i v&#7899;i giá tr&#7883; hàm m&#7909;c tiêu t&#259;ng thêm là </span><span
+lang=VI style='font-size:12.0pt;font-family:"TimesNewRoman"'>&#947;</span><span
+lang=VI style='font-size:15.0pt;font-family:"TimesNewRoman"'>(</span><i><span
+lang=VI style='font-size:11.5pt;font-family:"TimesNewRoman"'>S</span></i><span
+lang=VI style='font-size:8.5pt;font-family:"TimesNewRoman"'>2 </span><span lang=VI
+style='font-size:15.0pt;font-family:"TimesNewRoman"'>) </span><span lang=VI
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>= </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=21 height=20
+src="TSP_files/image069.png"></span><span lang=VI style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none'><span style='font-size:11.5pt;font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>          </span><span style='font-family:"TimesNewRoman"'>Trong
+t&#7853;p </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=14 height=20
+src="TSP_files/image070.png"></span><span style='font-family:"TimesNewRoman"'> do c&#7889;
+&#273;&#7883;nh </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=18 height=20
+src="TSP_files/image071.png"></span><span style='font-family:"TimesNewRoman"'>= 0
+nên t&#7915; các &#273;i&#7873;u ki&#7879;n (2), (3) suy ra ph&#7843;i có m&#7897;t
+</span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=16 height=22
+src="TSP_files/image072.png"></span><span style='font-family:"TimesNewRoman"'> =1(
+j </span><span style='font-family:"Courier New"'>&#8800;</span><span
+style='font-family:"TimesNewRoman"'> s) v</span><span style='font-family:"TimesNewRoman"'>à</span><span
+style='font-family:"TimesNewRoman"'> m&#7897;t </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=17 height=20
+src="TSP_files/image073.png"></span><span style='font-family:"TimesNewRoman"'> =1(i
+</span><span style='font-family:"Courier New"'>&#8800;</span><span
+style='font-family:"TimesNewRoman"'> r ). V</span><span style='font-family:"TimesNewRoman"'>ì</span><span
+style='font-family:"TimesNewRoman"'> th&#7871; </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=194 height=22
+src="TSP_files/image074.png"></span><span style='font-family:"TimesNewRoman"'>là m&#7897;t
+c&#7853;n d&#432;&#7899;i</span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=3 height=20 src="TSP_files/image075.png"></span><span
+style='font-family:"TimesNewRoman"'>&#273;&#7889;i v&#7899;i giá tr&#7883; m&#7909;c
+tiêu t&#259;ng thêm. Ta s&#7869; ch&#7885;n bi&#7871;n </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=18 height=20
+src="TSP_files/image071.png"></span><span style='font-family:"TimesNewRoman"'> sao
+cho hi&#7879;u gi&#7919;a các c&#7853;n d&#432;&#7899;i</span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=6 height=20 src="TSP_files/image076.png"></span><span
+style='font-family:"TimesNewRoman"'>này là l&#7899;n nh&#7845;t, ngh&#297;a là
+&#273;&#7841;t</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=122 height=27 src="TSP_files/image077.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>(5).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>          N&#7871;u
+</span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=45 height=20
+src="TSP_files/image078.png"></span><span style='font-family:"TimesNewRoman"'> thì </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=61 height=20
+src="TSP_files/image079.png"></span><span style='font-family:"TimesNewRoman"'> do
+hàng <i>r </i>và x&#7897;t <i>s</i> &#273;&#7873;u ch&#7913;a ph&#7847;n t&#7917;
+0. Vì th&#7871; </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=112 height=20
+src="TSP_files/image080.png"></span><span style='font-family:"TimesNewRoman"'>. Do
+&#273;ó, ta ch&#7881; c&#7847;n xét tr&#432;&#7901;ng h&#7907;p </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=45 height=20
+src="TSP_files/image081.png"></span><span style='font-family:"TimesNewRoman"'>.</span><span
+style='font-family:"TimesNewRoman"'>&#63731;Khi &#7845;y, </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=61 height=20
+src="TSP_files/image082.png"></span><span style='font-family:"TimesNewRoman"'> và </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:4.5pt'><img width=61 height=20
+src="TSP_files/image083.png"></span><span style='font-family:"TimesNewRoman"'>.</span><span
+style='font-family:"TimesNewRoman"'> &#63742;Khi &#273;óm (5) có th&#7875;
+&#273;&#432;&#7907;c thay th&#7871; b&#7903;i vi&#7879;c ch&#7885;n </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=18 height=20
+src="TSP_files/image071.png"></span><span style='font-family:"TimesNewRoman"'> &#273;&#7875;
+phân nhánh theo qui t&#7855;c,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=296 height=35 src="TSP_files/image084.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>(6).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><b><span style='font-family:
+"TimesNewRoman"'>Ng&#259;n c&#7845;m t&#7841;o chu t&#7841;o chu trình con</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>N&#7871;u
+t&#7853;p &#273;&#432;&#7907;c xét không ph&#7843;i là </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=14 height=20
+src="TSP_files/image085.png"></span><span style='font-family:"TimesNewRoman"'> mà
+là t&#7853;p,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=310 height=22 src="TSP_files/image086.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>          Ta
+v&#7851;n áp d&#7909;ng các qui t&#7855;c nh&#432; &#273;&#7889;i v&#7899;i </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=14 height=20
+src="TSP_files/image085.png"></span><span style='font-family:"TimesNewRoman"'>. Tuy
+nhiên, khi trong hàng <i>u</i> có </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=45 height=22
+src="TSP_files/image087.png"></span><span style='font-family:"TimesNewRoman"'> v&#7899;i
+m&#7885;i <i>j</i></span><span style='font-family:"Cambria Math","serif"'>&#8800;</span><i><span
+style='font-family:"TimesNewRoman"'>v</span></i><span style='font-family:"TimesNewRoman"'>
+thì b&#7855;t bu&#7897;c ph&#7843;i có </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=48 height=20
+src="TSP_files/image088.png"></span><span style='font-family:"TimesNewRoman"'>.
+T&#432;&#417;ng t&#7921; &#273;&#7889;i v&#7899;i các c&#7897;t.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>          Ngoài
+ra, khi ta &#273;ã ch&#7885;n </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=45 height=20
+src="TSP_files/image089.png"></span><span style='font-family:"TimesNewRoman"'> thì
+b&#7855;t bu&#7897;c </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=45 height=20
+src="TSP_files/image090.png"></span><span style='font-family:"TimesNewRoman"'>, mu&#7889;n
+v&#7853;y ta c&#7847;n &#273;&#7863;t </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=49 height=20
+src="TSP_files/image091.png"></span><span style='font-family:"TimesNewRoman"'>. M&#7863;t
+khác, &#273;&#432;&#7901;ng &#273;i trong </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=15 height=22
+src="TSP_files/image092.png"></span><span style='font-family:"TimesNewRoman"'> ch&#7913;a
+c&#7841;nh (<i>r,s</i>) thì g&#7891;m ít nh&#7845;t 2 v&#7857; nhi&#7873;u nh&#7845;t
+là n-2 c&#7841;nh,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=307 height=22 src="TSP_files/image093.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><img
+width=100 height=20 src="TSP_files/image094.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-family:"TimesNewRoman"'>(Không
+t&#7891;n t&#7841;i <i>k </i>và <i>l</i> &#273;&#7875; </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=24 height=22
+src="TSP_files/image095.png"></span><span style='font-family:"TimesNewRoman"'> ho&#7863;c
+</span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=21 height=22
+src="TSP_files/image096.png"></span><span style='font-family:"TimesNewRoman"'>).
+&#272;&#7891;ng th&#7901;i, &#273;&#7875; ng&#259;n c&#7845;m t&#7841;o thành
+chu trình con, d&#7841;ng </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=180 height=20
+src="TSP_files/image097.png"></span><span style='font-family:"TimesNewRoman"'> ta c&#7847;n
+&#273;&#7863;t </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=53 height=22
+src="TSP_files/image098.png"></span><span style='font-family:"TimesNewRoman"'>, còn
+v&#7899;i tr&#432;&#7901;ng h&#7907;p chu trình con d&#7841;ng </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:5.5pt'><img width=110 height=20
+src="TSP_files/image099.png"></span><span style='font-family:"TimesNewRoman"'> ta
+&#273;&#7863;t </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=54 height=22
+src="TSP_files/image100.png"></span><span style='font-family:"TimesNewRoman"'> và </span><span
+lang=VI style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+position:relative;top:7.0pt'><img width=58 height=22
+src="TSP_files/image101.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'><img width=301 height=145 id="Picture 1"
+src="TSP_files/image102.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><b><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>3.3 Cài &#273;&#7863;t</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>D&#7919; li&#7879;u &#273;&#7847;u vào là ma tr&#7853;n
+chi phí C &#7903; ví d&#7909; bài toán n=6;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>int matrix[ ][ ]={</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>        {0,3,93,13,33,9},</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>        {4,0,77,42,21,16},</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>        {47,17,0,36,16,28},</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>        {39,90,80,0,56,7},</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>        {28,46,88,33,0,25},</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>        {3,88,18,46,92,0}</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"Courier New"'>    };</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>Qua trình phân nhánh &#273;&#432;&#7907;c tóm t&#7855;t
+b&#7903;i hình d&#432;&#7899;i &#273;ây,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span style='position:relative;
+z-index:251700224;left:-15px;top:12px;width:363px;height:408px'><img width=363
+height=396 src="TSP_files/image103.png"></span><span style='font-size:11.5pt;
+font-family:"TimesNewRoman"'>&nbsp;</span></p>
+
+<br clear=ALL>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal;text-autospace:none'><span
+style='position:absolute;z-index:251661312;left:0px;margin-left:49px;
+margin-top:56px;width:107px;height:32px'><img width=107 height=32
+src="TSP_files/image104.png"
+alt="S_1,(6,3),81       {0,3,93,13,33,9},&#13;&#10;        {4,0,77,42,21,16},&#13;&#10;        {47,17,0,36,16,28},&#13;&#10;        {39,90,80,0,56,7},&#13;&#10;        {28,46,88,33,0,25},&#13;&#10;        {3,88,18,46,92,0}&#13;&#10;    };&#13;&#10;"></span><b><span
+style='font-size:11.5pt;font-family:"TimesNewRoman"'>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Fig
+1</span></b><b><span style='font-size:9.0pt;font-family:"TimesNewRoman"'>.</span></b><span
+style='font-size:9.0pt;font-family:"TimesNewRoman"'> Quá trình phân nhánh các
+ph&#432;&#417;ng án &#273;&#7875; gi&#7843;i bài toán ng&#432;&#7901;i du l&#7883;ch
+v&#7899;i n=6.</span></p>
+
+<p class=CMU>&nbsp;</p>
+
+<p class=CMU><span style='font-size:11.0pt'>Th&#7911; t&#7909;c rút g&#7885;n
+Matrix:</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"Courier New"'>int</span></b><span
+style='font-size:11.0pt;font-family:"Courier New"'> <b>rutGonMatran</b>(int[][]
+A,int k)</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>//k:kich
+thuoc ma tran A</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>1.<b>int</b>
+tem[]=null;/*tao mang chua dong hoac                           cot*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>2.<b>int</b>
+sum=0,rutGon;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>//rut
+gon hang</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>3.<b>for</b>
+<b>int</b> i=0 <b>to</b> k-1 <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>//Trich
+cac phan tu tren 1 hang</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>4.       <b>for</b>
+<b>int</b> j=0 <b>to</b> k-1 <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>5.                 tmp[j]=A[i][j];</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>          <b>end
+for</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>6.       rutGon=minRowCol(tmp);</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>7.       <b>if</b>
+rutGon&gt;0 <b>then</b> </span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>8.                 <b>for</b>
+j=0 <b>to</b> k-1 <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>9.                          A[i][j]-=rutGon;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>                   <b>end
+for</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>10.               sum+=rutGon;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>          <b>end
+if</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>11.      tmp=null;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>//rut
+gon cot</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>12.<b>for
+int</b> i=0 <b>to</b> k-1 <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>//Trich
+cac phan tu tren 1 cot</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>13.      <b>for</b>
+<b>int</b> j=0 <b>to</b> k-1 <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>14.               tmp[j]=A[j][i];</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>          <b>end
+for</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>15.      rutGon=minRowCol(tmp);</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>16.      <b>if</b>
+rutGon&gt;0 <b>then</b> </span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>17.               <b>for</b>
+j=0 <b>to</b> k-1 <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>18.                         A[i][j]-=rutGon;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>                   <b>end
+for</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>19.               sum+=rutGon;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>          <b>end
+if</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>20.      tmp=null;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Ta c&#361;ng có th&#7875; s&#7917;
+d&#7909;ng &#273;&#7879; qui &#273;&#7875; thay cho vòng l&#7863;p phép
+th&#7917; phân nhánh và so sánh luôn v&#7899;i giá tr&#7883; t&#7889;t
+nh&#7845;t hi&#7879;n t&#7841;i t&#7915; &#273;ó c&#7853;p nh&#7853;t giá
+tr&#7883; k&#7927; l&#7909;c. Th&#7911; t&#7909;c nh&#432; sau,</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Khai báo </span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>minCost=(int)
+Math.pow(10, 6),n;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>int[ ]resulf=new
+int[10];/*M&#7843;ng t&#7841;m          l&#432;u gi&#7919;                    c&#7845;u
+hình*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>int[ ]bestConfig=new
+int[10]; /*M&#7843;ng l&#432;u c&#7845;u                 hình t&#7889;t
+nh&#7845;t*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>int cost=0,start;/*chi
+phí hành trình và &#273;&#7881;nh                  xu&#7845;t phát*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>boolean
+B[ ]={false};/*Kiem tra dinh da                                 duyet*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>Th&#7911; t&#7909;c:</span></b></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt;font-family:"Courier New"'>void Try(int</span></b><span
+style='font-size:11.0pt;font-family:"Courier New"'> i)</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>/*Neu
+i=n, kiem tra cau hinh co la tot nhat khong.*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>1.<b>if</b>
+i=numberCity <b>then</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>2.       <b>if</b>
+cost+matrix[resulf[i1]][resulf[0]]&lt;minCost <b>then</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>3.       
+minCost=cost+matrix[resulf[i1]][resulf[0];</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>4. 
+xuatKetQua(resulf,bestConfig,</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>          numberCity);</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>          <b>end
+if</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>5.<b>else</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>6.  <b>for</b>
+<b>int</b> j=0 <b>to</b> numberCity <b>do</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>          </span><span
+lang=FR style='font-size:11.0pt;font-family:"Courier New"'>/*Duyet cac dinh
+kha thi chua di    qua va thoa man*/</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>7.    <b>if</b>
+B[j]=<b>false</b> </span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>           
+and cost+</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>                   matrix[resulf[i-1]][j]</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>                   &lt;
+minCost</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>           //Ghi
+nh&#7899; l&#7841;i k&#7871;t qu&#7843;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>      //&#272;i
+theo nhánh ch&#7913;a &#273;&#7881;nh j</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>8.                 resulf[i]=j;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>9.        
+B[j]=true;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>10.               cost+=
+</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>                   matrix[resulf[i-1]][j];</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>                   //Tiep
+tuc chia nhanh</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>11.               Try(i+1);</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>           //Neu
+khong theo nhanh nay</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>12.               B[j]=true;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>13.               cost+=
+</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>                   matrix[resulf[i-1]][j];</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>        <b>end
+if</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>     <b>end
+for</b></span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><span style='font-size:11.0pt'>Nh&#432; v&#7853;y ta ti&#7871;t
+ki&#7879;m &#273;&#432;&#7907;c th&#7901;i gian rút g&#7885;n ma tr&#7853;n
+(tuy nhiên s&#7869; m&#7845;t &#273;i tính nguyên v&#7865;n c&#7911;a
+thu&#7853;t toán). &#7902; &#273;ây ta &#273;ã khéo s&#7917; d&#7909;ng
+m&#7843;ng boolean B[ ] có nhi&#7879;m v&#7909; l&#432;u tr&#7919; thông tin
+v&#7873; các &#273;&#7881;nh xem &#273;ã &#273;&#432;&#7907;c duy&#7879;t trong
+hành trình ch&#432;a.</span></p>
+
+<p class=CMU><span style='font-size:11.0pt;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=CMU><b><span style='font-size:11.0pt'>4. Tham kh&#7843;o</span></b></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=338
+ style='width:253.35pt;border-collapse:collapse;border:none'>
+ <tr style='height:40.05pt'>
+  <td width=38 valign=top style='width:28.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.05pt'>
+  <p class=CMU style='background:transparent'><b><span style='font-size:11.0pt'>[1]</span></b></p>
+  </td>
+  <td width=300 valign=top style='width:224.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.05pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>PGS
+  TS Nguy&#7877;n &#272;&#7913;c Ngh&#297;a, <i>Bài gi&#7843;ng C&#7845;u trúc
+  d&#7919; li&#7879;u và gi&#7843;i thu&#7853;t</i>, NXB &#272;&#7841;i
+  h&#7885;c Bách Khoa Hà N&#7897;i, 2008, 274 trang</span></p>
+  <p class=CMU style='background:transparent'><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:40.05pt'>
+  <td width=38 valign=top style='width:28.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.05pt'>
+  <p class=CMU style='background:transparent'><b><span style='font-size:11.0pt'>[2]</span></b></p>
+  </td>
+  <td width=300 valign=top style='width:224.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.05pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>Nguy&#7877;n
+  &#272;&#7913;c Ngh&#297;a, Nguy&#7877;n Tô Thành, <i>Toán r&#7901;i r&#7841;c</i>,
+  NXB &#272;&#7841;i h&#7885;c Qu&#7889;c Gia Hà N&#7897;i, 2009, t&#7843;i
+  b&#7843;n l&#7847;n 8, 290 trang</span></p>
+  <p class=CMU style='background:transparent'><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:94.9pt'>
+  <td width=38 valign=top style='width:28.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:94.9pt'>
+  <p class=CMU style='background:transparent'><b><span style='font-size:11.0pt'>[3]</span></b></p>
+  </td>
+  <td width=300 valign=top style='width:224.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:94.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;text-autospace:none'><span lang=VI style='font-family:"TimesNewRoman"'>EXNAR
+  FILIP, MACHA</span><span lang=VI style='font-family:"TimesNewRoman"'>C </span><span
+  lang=VI style='font-family:"TimesNewRoman"'>OTAKAR</span><i><span
+  style='font-family:"TimesNewRoman"'> ,</span></i><i><span lang=VI
+  style='font-family:"TimesNewRoman"'>The Travelling Salesman Problem and</span></i><i><span
+  lang=VI style='font-family:"TimesNewRoman"'> </span></i><i><span lang=VI
+  style='font-family:"TimesNewRoman"'>its Application in Logistic</span></i><i><span
+  lang=VI style='font-family:"TimesNewRoman"'> </span></i><i><span lang=VI
+  style='font-family:"TimesNewRoman"'>Practice</span></i><i><span lang=VI>,</span></i><span
+  lang=VI style='font-size:12.0pt;font-family:"Times New Roman","serif"'> </span><span
+  lang=VI style='font-family:"TimesNewRoman"'>Department of economics and</span><span
+  lang=VI style='font-family:"TimesNewRoman"'> </span><span lang=VI
+  style='font-family:"TimesNewRoman"'>management of chemical</span><span lang=VI
+  style='font-family:"TimesNewRoman"'> </span><span lang=VI style='font-family:
+  "TimesNewRoman"'>and food</span><span lang=VI style='font-family:"TimesNewRoman"'> </span><span
+  lang=VI style='font-family:"TimesNewRoman"'>industry</span><span lang=VI
+  style='font-family:"TimesNewRoman"'> </span><span lang=VI style='font-family:
+  "TimesNewRoman"'>University of Pardubice</span><span lang=VI style='font-family:
+  "TimesNewRoman"'> </span><span lang=VI style='font-family:"TimesNewRoman"'>Studentská
+  95, 532 10 Pardubice</span></p>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>CZECH
+  REPUBLIC</span></p>
+  <p class=CMU style='background:transparent'><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:14.1pt'>
+  <td width=38 valign=top style='width:28.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:14.1pt'>
+  <p class=CMU style='background:transparent'><b><span style='font-size:11.0pt'>[4]</span></b></p>
+  </td>
+  <td width=300 valign=top style='width:224.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:14.1pt'>
+  <p class=CMU style='background:transparent'><span style='font-size:11.0pt'>Bùi
+  Th&#7871; Tâm, <i>Quy hoach Toán r&#7901;i r&#7841;c,</i> Vi&#7879;n Khoa
+  h&#7885;c và Công ngh&#7879; Vi&#7879;t Nam, 2008</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=CMU><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>
